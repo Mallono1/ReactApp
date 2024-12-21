@@ -1,13 +1,15 @@
 
  
 
+
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>
-        Visit my GitHub: <a href="https://https://github.com/Mallono1/ReactApp" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
-      </p>
-    </footer>
+    <div>
+      Footer
+      <a href="https://github.com/your-username/your-repository" target="_blank" rel="noopener noreferrer">
+        GitHub Repository
+      </a>
+    </div>
   );
 };
 
