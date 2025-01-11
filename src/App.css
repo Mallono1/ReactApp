@@ -35,6 +35,8 @@
   flex-direction: column;
 }
 
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
