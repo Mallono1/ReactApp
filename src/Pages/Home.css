@@ -1,0 +1,30 @@
+
+h4{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+p{
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+a{
+    font-size: 1.5rem;
+    color: #05ff75;
+    text-align: center;
+    padding: 20px;
+}
+.home{
+    width: 100%;
+    min-height: 60vh;
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

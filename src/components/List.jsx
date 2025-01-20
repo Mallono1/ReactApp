@@ -1,11 +1,18 @@
 import React from "react";
 import ListItem from "./ListItem";
+import "./List.css"; // Import the CSS file
 
-const List = ({ items, onDelete, onToggle }) => {
+const List = ({ items, onDelete, onToggle, onUpdateItem }) => {
   return (
-    <ul>
+    <ul className="task-list">
       {items.map((item) => (
-        <ListItem key={item.id} item={item} onDelete={onDelete} onToggle={onToggle} />
+        <ListItem
+          key={item.id}
+          item={item}
+          onDelete={onDelete}
+          onToggle={onToggle}
+          onUpdateItem={onUpdateItem}
+        />
       ))}
     </ul>
   );

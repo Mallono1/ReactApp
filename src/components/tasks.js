@@ -1,8 +1,36 @@
 const tasks = [
-  { id: 1, name: "Item 1", isCompleted: true },
-  { id: 2, name: "Item 2", isCompleted: false },
-  { id: 3, name: "Item 3", isCompleted: true },
-  { id: 4, name: "Item 4", isCompleted: false },
+  {
+    id: 1,
+    name: "Task 1",
+    isCompleted: false,
+    hour: "10:00 AM",
+    dayMonth: "01/01",
+    price: "$10",
+  },
+  {
+    id: 2,
+    name: "Task 2",
+    isCompleted: false,
+    hour: "11:00 AM",
+    dayMonth: "02/01",
+    price: "$20",
+  },
+  {
+    id: 3,
+    name: "Task 3",
+    isCompleted: false,
+    hour: "11:00 AM",
+    dayMonth: "02/01",
+    price: "$20",
+  },
+  {
+    id: 4,
+    name: "Task 4",
+    isCompleted: false,
+    hour: "11:00 AM",
+    dayMonth: "02/01",
+    price: "$20",
+  },
 ];
 
 export default tasks;

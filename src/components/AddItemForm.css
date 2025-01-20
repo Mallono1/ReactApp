@@ -1,0 +1,36 @@
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    
+}
+form.enter {
+    border-radius: 5px;
+    background-color: #bdb6eb;
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+
+}
+form.enter input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #a80d0d;
+    box-sizing: border-box;
+}
+form.enter button {
+    background-color: #24d74b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

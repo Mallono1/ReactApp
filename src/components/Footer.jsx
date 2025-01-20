@@ -1,3 +1,5 @@
+import React from "react";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -8,7 +10,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          GitHub Repo
+          View on GitHub
         </a>
       </p>
     </footer>

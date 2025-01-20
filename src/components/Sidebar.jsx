@@ -1,23 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Sidebar.css";
+import { use } from "react";
 
 const Sidebar = () => {
-  const handleHomeClick = (e) => {
-    e.preventDefault();
-    window.location.reload();
+  const [show, setShowSidebar] = useState(true);
+  const controlSidebar = () => {
+    if (window.scrollY >= 50) {
+      setShowSidebar(false);
+    } else {
+      setShowSidebar(true);
+    }
+    useEffect(() => {
+      window.addEventListener("scroll", controlSidebar);
+      return () => {
+        window.removeEventListener("scroll", controlSidebar);
+      };
+    }, []);
   };
 
   return (
-    <div className="sidebar">
+    <nav className={show ? "sidebar" : "sidebar active"}>
       <ul>
         <li>
-          <Link to="/" onClick={handleHomeClick}>Home</Link>
+          <Link to="/"></Link>
+        </li>
+
+        <li>
+          <Link to="/dashboard"></Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about"></Link>
+        </li>
+        <li>
+          <Link to="/item/:id"></Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 
