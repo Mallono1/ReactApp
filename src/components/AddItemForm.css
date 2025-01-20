@@ -22,8 +22,8 @@ form.enter input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 5px 0;
     display: inline-block;
-    border: 1px solid #a80d0d;
-    box-sizing: border-box;
+    border: 1px solid #000000;
+   
 }
 form.enter button {
     background-color: #24d74b;
@@ -33,4 +33,7 @@ form.enter button {
     border: none;
     cursor: pointer;
     width: 100%;
+}
+form.enter button:hover {
+    opacity: 0.8;
 }

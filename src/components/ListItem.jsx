@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UpdateItemForm from "./UpdateItemForm";
+ import "../components/ListItem.css";
 
 const ListItem = ({ item, onDelete, onToggle, onUpdateItem }) => {
   const [isEditing, setIsEditing] = useState(false);

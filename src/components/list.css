@@ -3,24 +3,24 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; /* Adjust the gap between items as needed */
     list-style-type: none;
-    padding: 0;
-    max-width: 500px ;
-    align-items: center;
+    padding: 20px;
+    max-width: 100%; 
+    align-items: block;
     justify-content: center;
-    margin: auto;
+    margin: 0;
 
   }
   
   .task-list li {
     border: 1px solid #ccc;
-    padding: 16px;
+    
     border-radius: 4px;
     background: linear-gradient(
       90deg,
       rgb(228, 36, 203) 0%,
       rgb(241, 27, 216) 100%
   );
-  box-sizing: border-box;
+  box-sizing: flex;
     
   }
   .task-list li:nth-child(4n+1){

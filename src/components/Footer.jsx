@@ -5,10 +5,9 @@ const Footer = () => {
     <footer className="footer">
       <p>
         Visit my GitHub:{" "}
-        <a
+        <a className="footer"
           href="https://github.com/Mallono1/ReactApp"
-          target="_blank"
-          rel="noopener noreferrer"
+          
         >
           View on GitHub
         </a>
