@@ -17,7 +17,7 @@ const UpdateItemForm = ({ item, onUpdateItem }) => {
         type="text"
         value={itemName}
         onChange={(e) => setItemName(e.target.value)}
-        placeholder="Enter item name"
+        placeholder="To Do"
       />
       <input
         type="text"
@@ -35,7 +35,7 @@ const UpdateItemForm = ({ item, onUpdateItem }) => {
         type="text"
         value={price}
         onChange={(e) => setPrice(e.target.value)}
-        placeholder="Enter price"
+        placeholder="Till"
       />
       <button type="submit">Update Item</button>
     </form>

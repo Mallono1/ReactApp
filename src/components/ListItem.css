@@ -2,18 +2,19 @@
     background-color: #24d74b;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
+    margin: 8px 0;    
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    position: relative ;
+    
 }
 .btn:hover {
     opacity: 0.8;
 }
 .item{
     
-    padding: 16px;
+    padding: 20px;
     border-radius: 4px;
  
   
