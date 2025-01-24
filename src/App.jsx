@@ -15,11 +15,11 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Sidebar />
+
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/item/:id" element={<ItemDetailsPage />} />
+        <Route path="/ItemDetails" element={<ItemDetailsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
