@@ -5,7 +5,7 @@ const tasks = [
     isCompleted: false,
     hour: "10:00 AM",
     dayMonth: "01/01",
-    price: "$10",
+    priority: "High",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const tasks = [
     isCompleted: false,
     hour: "11:00 AM",
     dayMonth: "02/01",
-    price: "$20",
+    priority: "High",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const tasks = [
     isCompleted: false,
     hour: "11:00 AM",
     dayMonth: "02/01",
-    price: "$20",
+    priority: "Low",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const tasks = [
     isCompleted: false,
     hour: "11:00 AM",
     dayMonth: "02/01",
-    price: "$20",
+    priority: "Low",
   },
 ];
 

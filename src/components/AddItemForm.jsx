@@ -5,16 +5,16 @@ const AddItemForm = ({ onAddItem }) => {
   const [itemName, setItemName] = useState("");
   const [hour, setHour] = useState("");
   const [dayMonth, setDayMonth] = useState("");
-  const [price, setPrice] = useState("");
+  const [priority, setPriority] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (itemName.trim() && hour.trim() && dayMonth.trim() && price.trim()) {
-      onAddItem(itemName, hour, dayMonth, price);
+    if (itemName.trim() && hour.trim() && dayMonth.trim() && priority.trim()) {
+      onAddItem(itemName, hour, dayMonth, priority);
       setItemName("");
       setHour("");
       setDayMonth("");
-      setPrice("");
+      setPriority("");
     }
   };
 
@@ -40,9 +40,9 @@ const AddItemForm = ({ onAddItem }) => {
       />
       <input
         type="text"
-        value={price}
-        onChange={(e) => setPrice(e.target.value)}
-        placeholder="Till"
+        value={priority}
+        onChange={(e) => setPriority(e.target.value)}
+        placeholder="High or Low"
       />
       <button type="submit-button">Add ToDo</button>
     </form>

@@ -18,21 +18,21 @@ const ItemList = () => {
     setTasks(updatedTasks);
   };
 
-  const handleAddItem = (name, hour, dayMonth, price) => {
+  const handleAddItem = (name, hour, dayMonth, priority) => {
     const newTask = {
       id: tasks.length + 1,
       name,
       isCompleted: false,
       hour,
       dayMonth,
-      price,
+      priority,
     };
     setTasks([...tasks, newTask]);
   };
 
-  const handleUpdateItem = (id, name, hour, dayMonth, price) => {
+  const handleUpdateItem = (id, name, hour, dayMonth, priority) => {
     const updatedTasks = tasks.map((task) =>
-      task.id === id ? { ...task, name, hour, dayMonth, price } : task
+      task.id === id ? { ...task, name, hour, dayMonth, priority } : task
     );
     setTasks(updatedTasks);
   };

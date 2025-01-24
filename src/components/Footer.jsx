@@ -5,10 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <p>
         Visit my GitHub:{" "}
-        <a className="footer"
-          href="https://github.com/Mallono1/ReactApp"
-          
-        >
+        <a className="footer" href="https://github.com/Mallono1/ReactApp">
           View on GitHub
         </a>
       </p>
