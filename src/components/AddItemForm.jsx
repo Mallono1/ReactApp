@@ -15,6 +15,22 @@ const AddItemForm = ({ onAddItem }) => {
       setHour("");
       setDayMonth("");
       setPriority("");
+    } else if (
+      itemName.length === 0 &&
+      hour.length === 0 &&
+      dayMonth.length === 0 &&
+      priority.length === 0
+    ) {
+      onAddItem(
+        `Task ${Math.floor(Math.random() * 100)}`,
+        `${Math.floor(Math.random() * 12) + 1}:${Math.floor(
+          Math.random() * 60
+        )} ${Math.round(Math.random()) === 0 ? "AM" : "PM"}`,
+        `${Math.floor(Math.random() * 30) + 1}/${
+          Math.floor(Math.random() * 12) + 1
+        }`,
+        Math.round(Math.random()) === 0 ? "Low" : "High"
+      );
     }
   };
 
