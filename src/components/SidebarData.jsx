@@ -22,10 +22,5 @@ export const SidebarData = [
     icon: <IoIcons.IoMdPeople />,
     cName: "nav-text",
   },
-  {
-    title: "item",
-    path: "/ItemDetails",
-    icon: <FaIcons.FaEnvelopeOpenText />,
-    cName: "nav-text",
-  },
+ 
 ];
