@@ -1,22 +1,23 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import tasksData from "../components/tasks";
+import React, { useEffect, useState } from "react";
+import tasksData from "./../components/tasks";
+import ListItem from "./../components/ListItem";
 
-const ItemDetailsPage = () => {
-  const { id } = useParams();
-  const item = tasksData.find((task) => task.id === parseInt(id));
+function ItemDetailsPage() {
+  const [tasks, setTasks] = useState(tasksData);
 
-  if (!item) {
-    return <div>Item not found</div>;
-  }
+  useEffect(() => {
+    const storageData = localStorage.getItem("myTasks");
+    if (storageData) {
+      setTasks(JSON.parse(storageData));
+    }
+  }, []);
 
   return (
-    <div className="item-details">
-      <h2>{item.name}</h2>
-      <p>{item.description}</p>
-      <p>Status: {item.isCompleted ? "Completed" : "Incomplete"}</p>
+    <div>
+      <h1>ItemDetailsPage</h1>
+      <ListItem key={tasks[2].id} item={tasks[2]} />
     </div>
   );
-};
+}
 
 export default ItemDetailsPage;
