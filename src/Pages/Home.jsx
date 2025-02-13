@@ -9,6 +9,7 @@ const Home = () => {
           Lets start to make your ToDo-List! click here to go to the{" "}
           <a href="/Dashboard">ToDo</a> page.
         </p>
+        <p>lets try to upload it</p>
       </div>
     </div>
   );
